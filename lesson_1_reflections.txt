@@ -31,4 +31,11 @@ git log: vedo tutte le commit del programma
 git diff c1 c2: mostra le differenze tra la commit c1 e la c2
 checkout: ripristina i miei files facendoli tornare quelli di una determinata commit
 git clone url: scarica la repository che si trova a url 
+git checkout master: se mi trovo in una versione passata dei file (ho fatto git checkout di una vecchia commit)
+					 con questo comando ritorno alla commit più recente
+git init: comando da eseguire all'interno di una cartella, mi crea la repository, quindi crea una cartella 
+		  invisibile ".git" che contiene i metadati che tengono traccia di tutte le modifiche ai miei files
+git add file: aggiunge un file alla staging area
+git  diff: mostra le differenze tra i files nella staging area e i files nella working directory
+git diff --staged: mostra le differenze tra i files della commit attuale e i files della staging area
 
