@@ -1,0 +1,8 @@
+What happens when you initialize a repository? Why do you need to do it?
+vengono creati dei file nascosti all'interno di una cartella nascosta ".git", 
+questi file contengono i metadati che tengono traccia delle modifiche che 
+faccio ai miei files
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+la staging area mi permette di committare solamente alcuni file in modo da tener traccia
+delle modifiche fatte file per file
