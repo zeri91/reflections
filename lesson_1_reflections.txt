@@ -32,10 +32,22 @@ git diff c1 c2: mostra le differenze tra la commit c1 e la c2
 checkout: ripristina i miei files facendoli tornare quelli di una determinata commit
 git clone url: scarica la repository che si trova a url 
 git checkout master: se mi trovo in una versione passata dei file (ho fatto git checkout di una vecchia commit)
-					 con questo comando ritorno alla commit più recente
+		     con questo comando ritorno alla commit più recente
 git init: comando da eseguire all'interno di una cartella, mi crea la repository, quindi crea una cartella 
 		  invisibile ".git" che contiene i metadati che tengono traccia di tutte le modifiche ai miei files
 git add file: aggiunge un file alla staging area
 git  diff: mostra le differenze tra i files nella staging area e i files nella working directory
 git diff --staged: mostra le differenze tra i files della commit attuale e i files della staging area
 
+git show "commit" --> mostra le differenze tra una commit ed i suoi parenti, questo perchè dopo che faccio
+					un marge le commit elencate in git log possono non essere commit successive e quindi 
+					se faccio git diff mi spuntano tantissime differenze e non solo quelle che la nuova 
+					commit ha rispetto alla precedente
+
+git merge master easymode --> crea una nuova commit che è l'unione delle 2 ultime commit dei 2 rami, se mi trovo in master
+							  la nuova commmit farà parte di master. 
+
+se voglio includere le funzioni di master in easymode senza alterare master, prima mi sposto su easymode (git checkout easy-mode)
+e dopo uso il comando git merge easymode master (ho invertito l'ordine dei 2 rami)
+se il merge fallisce a causa di conflitti significa che entrambe le commit che voglio unire hanno modificato la stessa parte 
+di codice

@@ -1,0 +1,24 @@
+
+branches: è il nome dato alle etichette che mi permettono di dare un nome alle mie commit
+
+Se le varie commit sono pensate come nodi collegati tra loro, possiamo pensare ai branches
+come a dei rami dell'albero che si viene a formare dalla connessione dei vari nodi. 
+
+Sono usate nel caso in cui voglio creare una versione beta del mio software o magari 
+una versione in una lingua diversa.
+
+il ramo principale è chiamato "master"
+
+è possibile fare il checkout di un branch proprio come si fa con le commit ma inserendo 
+direttamente il nome del ramo al posto del codice della commit, il nome del ramo è un'
+etichetta associata alla commit più recente del ramo, è per questo che quando do il 
+comando:
+	git checkout master
+ritorno alla commit più recente del ramo
+
+git brach -> mostra tutti i rami, quello con l'asterisco è il ramo corrente, quello
+	     in cui mi trovo
+
+git branch nome -> crea un nuovo branch di nome "nome"
+git branch -d "nome" --> elimina il branch di nome "nome", ovviamente
+						 viene eliminata solo l'etichetta, le commit restano

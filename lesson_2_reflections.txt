@@ -6,3 +6,18 @@ faccio ai miei files
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 la staging area mi permette di committare solamente alcuni file in modo da tener traccia
 delle modifiche fatte file per file
+
+How can you use the staging area to make sure you have one commit per logical change?
+posso visualizzare quante cose ho cambiato rispetto all'ultima commit
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+quando devo fare modifiche significative al programma che ne cambiano il comportamento 
+
+How do the diagrams help you visualize the branch structure?
+molto, senza diagramma è difficile avere una visione globale di tutte le commits
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Consente di fondere due versioni diverse del programma in una che comprende i miglioramenti di entrambe
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic mi risparmia molto lavoro, manually mi permette di decidere cosa prendere e cosa no dai 2 rami
